@@ -1,0 +1,24 @@
+{
+  "name": "aytr-dev-setup",
+  "version": "1.0.0",
+  "description": "Development setup scripts for Aytr project",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aytr-dev/aytr-dev-setup.git"
+  },
+  "scripts": {
+    "setup": "node setup.js",
+    "check": "node scripts/check-node.js",
+    "init": "node scripts/init.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "aytr",
+    "setup",
+    "development",
+    "tooling"
+  ]
+}

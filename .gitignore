@@ -1,0 +1,15 @@
+# Development setup ignores
+# (This folder will be part of the root org repo)
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
