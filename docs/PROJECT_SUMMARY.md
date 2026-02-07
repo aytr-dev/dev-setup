@@ -16,11 +16,11 @@ Quick reference for the Aytr Studio project structure and organization.
 VS Code/Cursor extension for visual RAD development.
 
 **Key Files:**
-- `AYTR_STUDIO_SPEC.md` - Complete technical specification
-- `CURSOR_IMPLEMENTATION_GUIDE.md` - Step-by-step build guide
+- `docs/AYTR_STUDIO_SPEC.md` - Complete technical specification
+- `docs/CURSOR_IMPLEMENTATION_GUIDE.md` - Step-by-step build guide
 - `.cursorrules` - Brand safety and coding standards
 - `README.md` - Public documentation
-- `CONTRIBUTING.md` - Contribution guidelines
+- `docs/CONTRIBUTING.md` - Contribution guidelines
 
 **Structure:**
 ```
@@ -69,10 +69,10 @@ aytr-web/
 
 ## 📚 Documentation
 
-- **Specification**: See `AYTR_STUDIO_SPEC.md`
-- **Implementation Guide**: See `CURSOR_IMPLEMENTATION_GUIDE.md`
-- **Repository Setup**: See `REPOSITORY_STRUCTURE.md`
-- **Migration Guide**: See `MIGRATION_GUIDE.md`
+- **Specification**: See `docs/AYTR_STUDIO_SPEC.md`
+- **Implementation Guide**: See `docs/CURSOR_IMPLEMENTATION_GUIDE.md`
+- **Repository Setup**: See `docs/REPOSITORY_STRUCTURE.md`
+- **Migration Guide**: See `docs/MIGRATION_GUIDE.md`
 
 ## 🔗 Important Links
 
@@ -87,7 +87,7 @@ aytr-web/
 2. ✅ Set up `aytr-studio` repository
 3. ✅ Set up `aytr-web` repository
 4. ✅ Configure domain DNS
-5. ⏳ Start building the extension (follow `CURSOR_IMPLEMENTATION_GUIDE.md`)
+5. ⏳ Start building the extension (follow `docs/CURSOR_IMPLEMENTATION_GUIDE.md`)
 
 ---
 

@@ -1,14 +1,14 @@
 # 🚀 Aytr Project Setup
 
-This folder contains both the extension (`plugin/`) and website (`web/`) projects. Each will be its own Git repository.
+This folder contains the development setup scripts for both the extension (`plugin/`) and website (`web/`) projects. Each will be its own Git repository.
 
 ## 📁 Current Structure
 
 ```
 Aytr/
-├── plugin/          # VS Code Extension (aytr-dev/aytr-studio)
-├── web/             # Website (aytr-dev/aytr-web)
-└── README.md        # This file
+├── dev-setup/          # This repository (aytr-dev/aytr-dev-setup)
+├── plugin/             # → aytr-dev/aytr-studio
+└── web/                # → aytr-dev/aytr-web
 ```
 
 ## 🔧 Setting Up Repositories
@@ -43,21 +43,22 @@ git push -u origin main
 ## 📝 Next Steps
 
 1. ✅ Create GitHub organization `aytr-dev`
-2. ✅ Create `aytr-studio` repository
-3. ✅ Create `aytr-web` repository
-4. ✅ Push code to respective repositories
-5. ✅ Set up domain DNS for `aytr.dev`
-6. ✅ Configure CI/CD workflows
+2. ✅ Create `aytr-dev-setup` repository
+3. ✅ Create `aytr-studio` repository
+4. ✅ Create `aytr-web` repository
+5. ✅ Push code to respective repositories
+6. ✅ Set up domain DNS for `aytr.dev`
+7. ✅ Configure CI/CD workflows
 
 ## 📚 Documentation
 
-- **Extension**: See `plugin/README.md`
-- **Repository Structure**: See `REPOSITORY_STRUCTURE.md`
-- **Migration Guide**: See `MIGRATION_GUIDE.md`
+- **Extension**: See `../plugin/README.md`
+- **Repository Structure**: See [REPOSITORY_STRUCTURE.md](REPOSITORY_STRUCTURE.md)
+- **Migration Guide**: See [MIGRATION_GUIDE.md](MIGRATION_GUIDE.md)
 
 ---
 
 **Important**: 
 - This root folder (`Aytr/`) is **not a Git repository** - it's just an organizational folder
-- Each subfolder (`plugin/` and `web/`) will be initialized as its own separate Git repository
+- Each subfolder (`dev-setup/`, `plugin/`, and `web/`) will be initialized as its own separate Git repository
 - No root-level `.gitignore` or other git files are needed here

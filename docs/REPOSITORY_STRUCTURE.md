@@ -7,15 +7,20 @@
 
 ### Repository Strategy: Separate Repos (Recommended)
 
-For maximum flexibility and cleaner separation, use **two separate repositories**:
+For maximum flexibility and cleaner separation, use **three separate repositories**:
 
-1. **`aytr-dev/aytr-studio`** - VS Code/Cursor Extension
+1. **`aytr-dev/aytr-dev-setup`** - Development setup scripts
+   - Setup automation
+   - Dependency management
+   - Build verification
+
+2. **`aytr-dev/aytr-studio`** - VS Code/Cursor Extension
    - The complete extension codebase
    - Component packages
    - Designer UI
    - Marketplace integration
 
-2. **`aytr-dev/aytr-web`** - Website & Documentation
+3. **`aytr-dev/aytr-web`** - Website & Documentation
    - Marketing website (aytr.dev)
    - Documentation site
    - Blog
@@ -26,10 +31,12 @@ For maximum flexibility and cleaner separation, use **two separate repositories*
 ✅ **Different Deployment Cycles**
 - Extension updates via VS Code Marketplace
 - Website updates independently
+- Setup scripts updated separately
 
 ✅ **Different Access Controls**
 - Extension repo: Core contributors only
 - Website repo: Marketing/content team access
+- Setup repo: Shared tooling
 
 ✅ **Cleaner CI/CD**
 - Separate build pipelines
@@ -43,24 +50,23 @@ For maximum flexibility and cleaner separation, use **two separate repositories*
 
 ---
 
-## Alternative: Monorepo Structure
-
-If you prefer a monorepo approach, use this structure:
-
-```
-aytr-dev/aytr/
-├── packages/
-│   ├── studio/          # VS Code extension
-│   └── web/             # Website
-├── package.json          # Root workspace config
-└── README.md
-```
-
-**Tools:** Use npm/yarn workspaces or pnpm workspaces.
-
----
-
 ## Repository Details
+
+### `aytr-dev/aytr-dev-setup`
+
+**Purpose:** Development setup scripts and tooling
+
+**Structure:**
+```
+aytr-dev-setup/
+├── setup.js              # Main entry point
+├── Makefile              # Make targets
+├── package.json          # Node.js config
+├── scripts/               # Setup scripts
+└── docs/                 # Documentation
+```
+
+**GitHub Topics:** `development-tools`, `setup-scripts`, `nodejs`, `automation`
 
 ### `aytr-dev/aytr-studio`
 
@@ -83,10 +89,8 @@ aytr-studio/
 ├── builtin/
 ├── package.json
 ├── tsconfig.json
-├── webpack.config.js
 ├── README.md
-├── AYTR_STUDIO_SPEC.md
-└── CURSOR_IMPLEMENTATION_GUIDE.md
+└── docs/                # Documentation
 ```
 
 **GitHub Topics:** `vscode-extension`, `cursor`, `rad`, `web-components`, `typescript`, `visual-designer`
@@ -129,49 +133,12 @@ aytr-web/
 2. Name: `aytr-dev`
 3. Plan: Free (upgrade later if needed)
 
-### 2. Create Extension Repository
+### 2. Create Repositories
 
-```bash
-# In your current Aytr folder
-cd /Users/jameymcelveen/Developer/Aytr
-
-# Initialize git if not already done
-git init
-
-# Add remote
-git remote add origin https://github.com/aytr-dev/aytr-studio.git
-
-# Create initial commit
-git add .
-git commit -m "Initial commit: Aytr Studio extension"
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
-
-### 3. Create Website Repository
-
-```bash
-# Create new directory
-mkdir ../aytr-web
-cd ../aytr-web
-
-# Initialize (choose your framework)
-npm create next-app@latest . --typescript --tailwind --app
-
-# Initialize git
-git init
-git remote add origin https://github.com/aytr-dev/aytr-web.git
-
-# Add basic structure
-# ... (create initial website files)
-
-git add .
-git commit -m "Initial commit: Aytr website"
-git branch -M main
-git push -u origin main
-```
+Create three repositories in the `aytr-dev` organization:
+- `aytr-dev-setup`
+- `aytr-studio`
+- `aytr-web`
 
 ---
 
@@ -181,7 +148,7 @@ git push -u origin main
 
 1. **Profile**
    - Display name: "Aytr"
-   - Description: "Visual RAD for the Modern Web"
+   - Description: "Visual RAD platform for TypeScript and Web Components"
    - Website: `https://aytr.dev`
    - Location: (your location)
 
@@ -212,9 +179,6 @@ Point `aytr.dev` to your hosting:
 **For Documentation (optional subdomain):**
 - CNAME: `docs` → (docs hosting)
 
-**For Extension (optional):**
-- CNAME: `marketplace` → (if you host your own marketplace)
-
 ### Recommended Hosting
 
 - **Website:** Vercel, Netlify, or Cloudflare Pages
@@ -226,13 +190,14 @@ Point `aytr.dev` to your hosting:
 ## Next Steps
 
 1. ✅ Create `aytr-dev` organization on GitHub
-2. ✅ Create `aytr-studio` repository
-3. ✅ Create `aytr-web` repository
-4. ✅ Update all documentation with new org name
-5. ✅ Set up domain DNS
-6. ✅ Configure CI/CD workflows
-7. ✅ Set up issue templates
-8. ✅ Create contribution guidelines
+2. ✅ Create `aytr-dev-setup` repository
+3. ✅ Create `aytr-studio` repository
+4. ✅ Create `aytr-web` repository
+5. ✅ Update all documentation with new org name
+6. ✅ Set up domain DNS
+7. ✅ Configure CI/CD workflows
+8. ✅ Set up issue templates
+9. ✅ Create contribution guidelines
 
 ---
 

@@ -89,12 +89,15 @@ Aytr/
 └── web/                  # → aytr-dev/aytr-web
 ```
 
-## Documentation
+## 📚 Documentation
 
-- **[Migration Guide](MIGRATION_GUIDE.md)** - Moving to separate repos
-- **[Repository Structure](REPOSITORY_STRUCTURE.md)** - Repo organization
-- **[Project Summary](PROJECT_SUMMARY.md)** - Quick reference
-- **[Setup Instructions](SETUP.md)** - Detailed setup guide
+All documentation is in the [`docs/`](docs/) folder:
+
+- **[Migration Guide](docs/MIGRATION_GUIDE.md)** - Moving to separate repos
+- **[Repository Structure](docs/REPOSITORY_STRUCTURE.md)** - Repo organization
+- **[Project Summary](docs/PROJECT_SUMMARY.md)** - Quick reference
+- **[Setup Instructions](docs/SETUP.md)** - Detailed setup guide
+- **[Structure Summary](docs/STRUCTURE_SUMMARY.md)** - Project structure overview
 
 ## Troubleshooting
 
